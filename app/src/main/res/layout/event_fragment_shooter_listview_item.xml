@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/playerTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_16dp"
+            android:layout_marginLeft="@dimen/default_16dp"
+            android:text="萨拉赫"
+            android:textSize="@dimen/default_16sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/teamTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_16dp"
+            android:layout_marginLeft="@dimen/default_16dp"
+            android:text="利物浦"
+            android:textSize="@dimen/default_16sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toRightOf="@+id/playerTextView"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/seasonTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_8dp"
+            android:layout_marginLeft="@dimen/default_16dp"
+            android:layout_marginBottom="@dimen/default_16dp"
+            android:text="2018"
+            android:textSize="@dimen/default_14sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/teamTextView"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <TextView
+            android:id="@+id/rankTitleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_8dp"
+            android:layout_marginLeft="@dimen/default_16dp"
+            android:layout_marginBottom="@dimen/default_16dp"
+            android:text="排行："
+            android:textSize="@dimen/default_14sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintLeft_toRightOf="@+id/seasonTextView"
+            app:layout_constraintTop_toBottomOf="@+id/teamTextView"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <TextView
+            android:id="@+id/rankTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_8dp"
+            android:layout_marginLeft="@dimen/default_8dp"
+            android:layout_marginBottom="@dimen/default_16dp"
+            android:text="1"
+            android:textSize="@dimen/default_14sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintLeft_toRightOf="@+id/rankTitleTextView"
+            app:layout_constraintTop_toBottomOf="@+id/teamTextView"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <TextView
+            android:id="@+id/goalTitleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_8dp"
+            android:layout_marginLeft="@dimen/default_16dp"
+            android:layout_marginBottom="@dimen/default_16dp"
+            android:text="得分："
+            android:textSize="@dimen/default_14sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintLeft_toRightOf="@+id/rankTextView"
+            app:layout_constraintTop_toBottomOf="@+id/teamTextView"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <TextView
+            android:id="@+id/goalTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_8dp"
+            android:layout_marginLeft="@dimen/default_8dp"
+            android:layout_marginBottom="@dimen/default_16dp"
+            android:text="30"
+            android:textSize="@dimen/default_14sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintLeft_toRightOf="@+id/goalTitleTextView"
+            app:layout_constraintTop_toBottomOf="@+id/teamTextView"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <TextView
+            android:id="@+id/penaltyTitleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_8dp"
+            android:layout_marginLeft="@dimen/default_16dp"
+            android:layout_marginBottom="@dimen/default_16dp"
+            android:text="罚球："
+            android:textSize="@dimen/default_14sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintLeft_toRightOf="@+id/goalTextView"
+            app:layout_constraintTop_toBottomOf="@+id/teamTextView"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <TextView
+            android:id="@+id/penaltyTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_8dp"
+            android:layout_marginLeft="@dimen/default_8dp"
+            android:layout_marginBottom="@dimen/default_16dp"
+            android:text="1"
+            android:textSize="@dimen/default_14sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintLeft_toRightOf="@+id/penaltyTitleTextView"
+            app:layout_constraintTop_toBottomOf="@+id/teamTextView"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+</LinearLayout>

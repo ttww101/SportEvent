@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/datetimeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_16dp"
+            android:layout_marginLeft="@dimen/default_16dp"
+            android:text="20190131 05:30"
+            android:textSize="@dimen/default_12sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/weekTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_16dp"
+            android:layout_marginLeft="@dimen/default_8dp"
+            android:text="星期一"
+            android:textSize="@dimen/default_12sp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/datetimeTextView" />
+
+        <TextView
+            android:id="@+id/statusTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/default_8dp"
+            android:text="完赛"
+            android:textSize="@dimen/default_14sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintBottom_toBottomOf="@+id/datetimeTextView"
+            app:layout_constraintLeft_toRightOf="@+id/weekTextView"
+            app:layout_constraintTop_toTopOf="@+id/datetimeTextView" />
+
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/default_16dp"
+            android:layout_marginTop="@dimen/default_8dp"
+            android:layout_marginRight="@dimen/default_16dp"
+            android:text="2018/19赛季 英超第15轮 曼联 2-2 阿森纳"
+            android:textSize="@dimen/default_14sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/datetimeTextView" />
+
+        <TextView
+            android:id="@+id/contentTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/default_16dp"
+            android:layout_marginTop="@dimen/default_8dp"
+            android:layout_marginRight="@dimen/default_16dp"
+            android:layout_marginBottom="@dimen/default_16dp"
+            android:text="伯恩茅斯 迪恩考特球场"
+            android:textSize="@dimen/default_14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titleTextView" />
+
+        <Button
+            android:id="@+id/resultButton"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginRight="@dimen/default_16dp"
+            android:layout_marginTop="@dimen/default_4dp"
+            android:layout_marginBottom="@dimen/default_12dp"
+            android:background="@android:color/holo_green_dark"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:paddingLeft="@dimen/default_12dp"
+            android:paddingRight="@dimen/default_12dp"
+            android:text="数据库"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/default_14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titleTextView" />
+
+        <Button
+            android:id="@+id/liveButton"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginRight="@dimen/default_8dp"
+            android:layout_marginTop="@dimen/default_4dp"
+            android:layout_marginBottom="@dimen/default_12dp"
+            android:background="@android:color/holo_orange_dark"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:paddingLeft="@dimen/default_12dp"
+            android:paddingRight="@dimen/default_12dp"
+            android:text="视频库"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/default_14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/resultButton"
+            app:layout_constraintTop_toBottomOf="@+id/titleTextView" />
+
+    </android.support.constraint.ConstraintLayout>
+</LinearLayout>

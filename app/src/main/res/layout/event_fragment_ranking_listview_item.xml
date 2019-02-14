@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/teamTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_16dp"
+            android:layout_marginLeft="@dimen/default_16dp"
+            android:text="火箭 (赛区)"
+            android:textSize="@dimen/default_16sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/seasonTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_8dp"
+            android:layout_marginLeft="@dimen/default_16dp"
+            android:text="2018"
+            android:textSize="@dimen/default_14sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/teamTextView" />
+
+        <TextView
+            android:id="@+id/rankTitleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_8dp"
+            android:layout_marginLeft="@dimen/default_16dp"
+            android:text="排行："
+            android:textSize="@dimen/default_14sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintLeft_toRightOf="@+id/seasonTextView"
+            app:layout_constraintTop_toBottomOf="@+id/teamTextView" />
+
+        <TextView
+            android:id="@+id/rankTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_8dp"
+            android:layout_marginLeft="@dimen/default_8dp"
+            android:text="1"
+            android:textSize="@dimen/default_14sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintLeft_toRightOf="@+id/rankTitleTextView"
+            app:layout_constraintTop_toBottomOf="@+id/teamTextView" />
+
+        <TextView
+            android:id="@+id/winTitleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/default_16dp"
+            android:layout_marginTop="@dimen/default_8dp"
+            android:text="胜："
+            android:textSize="@dimen/default_14sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintLeft_toRightOf="@+id/rankTextView"
+            app:layout_constraintTop_toBottomOf="@+id/teamTextView" />
+
+        <TextView
+            android:id="@+id/winTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_8dp"
+            android:layout_marginLeft="@dimen/default_8dp"
+            android:text="30"
+            android:textSize="@dimen/default_14sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintLeft_toRightOf="@+id/winTitleTextView"
+            app:layout_constraintTop_toBottomOf="@+id/teamTextView" />
+
+        <TextView
+            android:id="@+id/loseTitleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/default_16dp"
+            android:layout_marginTop="@dimen/default_8dp"
+            android:text="负："
+            android:textSize="@dimen/default_14sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintLeft_toRightOf="@+id/winTextView"
+            app:layout_constraintTop_toBottomOf="@+id/teamTextView" />
+
+        <TextView
+            android:id="@+id/loseTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_8dp"
+            android:layout_marginLeft="@dimen/default_8dp"
+            android:text="1"
+            android:textSize="@dimen/default_14sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintLeft_toRightOf="@+id/loseTitleTextView"
+            app:layout_constraintTop_toBottomOf="@+id/teamTextView" />
+
+        <TextView
+            android:id="@+id/allTitleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/default_16dp"
+            android:layout_marginTop="@dimen/default_8dp"
+            android:text="平："
+            android:textSize="@dimen/default_14sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintLeft_toRightOf="@+id/loseTextView"
+            app:layout_constraintTop_toBottomOf="@+id/teamTextView" />
+
+        <TextView
+            android:id="@+id/allTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_8dp"
+            android:layout_marginLeft="@dimen/default_8dp"
+            android:text="1"
+            android:textSize="@dimen/default_14sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintLeft_toRightOf="@+id/allTitleTextView"
+            app:layout_constraintTop_toBottomOf="@+id/teamTextView" />
+
+        <TextView
+            android:id="@+id/desc1TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/default_16dp"
+            android:layout_marginTop="@dimen/default_8dp"
+            android:layout_marginBottom="@dimen/default_16dp"
+            android:text="主场 a-b\n客场 c-d\n胜率 72.00"
+            android:textSize="@dimen/default_14sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/seasonTextView" />
+
+        <TextView
+            android:id="@+id/desc2TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/default_16dp"
+            android:layout_marginTop="@dimen/default_8dp"
+            android:layout_marginBottom="@dimen/default_16dp"
+            android:text="得分 111.66\n失分 103.88\n胜分 7.78"
+            android:textSize="@dimen/default_14sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/desc1TextView"
+            app:layout_constraintTop_toBottomOf="@+id/seasonTextView" />
+
+        <TextView
+            android:id="@+id/desc3TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/default_16dp"
+            android:layout_marginTop="@dimen/default_8dp"
+            android:layout_marginBottom="@dimen/default_16dp"
+            android:text="目前\n连胜\n2场 "
+            android:textSize="@dimen/default_14sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/desc2TextView"
+            app:layout_constraintTop_toBottomOf="@+id/seasonTextView" />
+
+    </android.support.constraint.ConstraintLayout>
+</LinearLayout>

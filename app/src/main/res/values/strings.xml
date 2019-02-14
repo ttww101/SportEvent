@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">竞竞比分</string>
+    <string name="welcome_title">欢迎使用</string>
+    <string name="event_news">赛事新闻</string>
+    <string name="recent_event">近期赛事</string>
+    <string name="historical_event">历史赛程</string>
+    <string name="shooter_list">射手榜</string>
+    <string name="ranking_list">积分榜</string>
+    <string name="event_classification">赛事分类</string>
+    <string name="title_activity_drawer">DrawerActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="hello">Hello World, JPush!</string>
+    <string name="tag_hint">Tag为大小写字母，数字，下划线,中文， 多个用以逗号分隔</string>
+    <string name="alias_hint">Alias为大小写字母，数字，下划线</string>
+    <string name="mobilenumber_hint">手机号只能以“+”或数字开头第二位开始只能包含“-”和数字</string>
+    <string name="style_hint">style为数字</string>
+    <string name="error_style_empty">style不能为空</string>
+    <string name="error_alias_empty">alias不能为空</string>
+    <string name="error_tag_empty">tag不能为空</string>
+    <string name="error_tag_gs_empty">格式不对</string>
+    <string name="mobilenumber_empty_guide">手机号为空将清除之前设置的手机号</string>
+    <string name="error_network">网络连接异常,初始化失败 请检查网络！</string>
+    <string name="logining">程序在后台执行, 请查看日志！</string>
+    <string name="setting_su">设置成功</string>
+
+    <string name="exit_app_title">離開</string>
+    <string name="exit_app_description">是否要關閉App</string>
+    <string name="confirm">確定</string>
+    <string name="cancel">取消</string>
+    <string name="yes">是</string>
+    <string name="no">否</string>
+    <string name="ok">好</string>
+</resources>
